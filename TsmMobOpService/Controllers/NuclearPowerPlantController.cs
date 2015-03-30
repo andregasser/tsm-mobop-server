@@ -57,5 +57,18 @@
 
             return this.Ok(powerPlant);
         }
+
+        /// <summary>
+        /// Counts this instance.
+        /// </summary>
+        /// <returns>IHttpActionResult.</returns>
+        [HttpGet]
+        [Route("api/nuclearpowerplant/count")]
+        public IHttpActionResult Count()
+        {
+            var numberOfRecords = this.powerPlants.Count();
+
+            return this.Ok(numberOfRecords);
+        }
     }
 }

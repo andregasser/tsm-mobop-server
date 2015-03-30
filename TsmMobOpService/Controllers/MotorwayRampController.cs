@@ -61,5 +61,18 @@
 
             return this.Ok(powerPlant);
         }
+
+        /// <summary>
+        /// Counts this instance.
+        /// </summary>
+        /// <returns>IHttpActionResult.</returns>
+        [HttpGet]
+        [Route("api/motorwayramp/count")]
+        public IHttpActionResult Count()
+        {
+            var numberOfRecords = this.motorwayRamps.Count();
+
+            return this.Ok(numberOfRecords);
+        }
     }
 }
