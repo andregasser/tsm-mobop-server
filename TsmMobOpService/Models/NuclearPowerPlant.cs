@@ -2,13 +2,13 @@
 {
     public class NuclearPowerPlant
     {
-        public NuclearPowerPlant(int id, string name, string description, float longitude, float latitude)
+        public NuclearPowerPlant(int id, string name, string description, float latitude, float longitude)
         {
             this.Id = id;
             this.Name = name;
             this.Description = description;
-            this.Longitude = longitude;
             this.Latitude = latitude;
+            this.Longitude = longitude;
         }
 
         public int Id { get; set; }

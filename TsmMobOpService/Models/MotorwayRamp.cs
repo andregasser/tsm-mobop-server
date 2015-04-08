@@ -2,13 +2,13 @@
 {
     public class MotorwayRamp
     {
-        public MotorwayRamp(int id, string name, string motorway, float longitude, float latitude)
+        public MotorwayRamp(int id, string name, string motorway, float latitude, float longitude)
         {
             this.Id = id;
             this.Name = name;
             this.Motorway = motorway;
-            this.Longitude = longitude;
             this.Latitude = latitude;
+            this.Longitude = longitude;
         }
 
         public int Id { get; set; }
